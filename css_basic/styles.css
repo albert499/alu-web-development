@@ -58,3 +58,16 @@ footer a {
     font-weight: bold; /* Make the text bold */
 }
 
+/* Media query for small screens */
+@media (max-width: 800px) {
+    body.works_on_smartphone {
+        display: block;
+    }
+    body.works_on_smartphone main {
+        display: block;
+    }
+    header .right {
+        float: none;
+    }
+}
+

@@ -1,73 +1,74 @@
-/* Apply flexbox to body and main */
+/* Flexbox layout for body and main */
 body {
     display: flex;
-    flex-direction: column; /* Column layout for body */
-    height: 100%; /* Ensure body takes full height */
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 main {
     display: flex;
-    flex-direction: row; /* Row layout for main */
-    flex: auto; /* Automatically adjust height and width */
+    flex-direction: row;
+    flex: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-/* Define the width distribution for article and aside */
 article {
-    flex: 2; /* Takes up 2/3 of the width */
-    overflow-y: auto; /* Enable vertical scroll if content overflows */
-    padding: 20px; /* Add some padding for better readability */
+    flex: 2;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
 }
 
 aside {
-    flex: 1; /* Takes up 1/3 of the width */
-    overflow-y: auto; /* Enable vertical scroll if content overflows */
-    padding: 20px; /* Add some padding for better readability */
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fafafa;
 }
 
-/* Style header */
+/* Header styling */
 header {
-    background-color: #f0f0f0; /* Light grey background */
-    padding: 20px; /* Padding around the header content */
-    border-bottom: 1px solid #ccc; /* Subtle border at the bottom */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header ul {
-    list-style-type: none; /* Remove default list style */
-    display: flex; /* Align items horizontally */
-    gap: 20px; /* Space between navigation items */
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-header a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Dark text color */
-    font-weight: bold; /* Make the text bold */
+header li.logo {
+    font-size: 24px;
+    margin-right: auto;
+    padding-left: 20px;
 }
 
-/* Style footer */
+header li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header li a:hover {
+    background-color: #555;
+}
+
+/* Footer styling */
 footer {
-    background-color: #f0f0f0; /* Light grey background */
-    padding: 20px; /* Padding around the footer content */
-    border-top: 1px solid #ccc; /* Subtle border at the top */
-    text-align: center; /* Center-align footer content */
-}
-
-/* Ensure footer link is styled similarly to header links */
-footer a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Dark text color */
-    font-weight: bold; /* Make the text bold */
-}
-
-/* Media query for small screens */
-@media (max-width: 800px) {
-    body.works_on_smartphone {
-        display: block;
-    }
-    body.works_on_smartphone main {
-        display: block;
-    }
-    header .right {
-        float: none;
-    }
-}
+    background-color: #333;
+    color: #fff;
 

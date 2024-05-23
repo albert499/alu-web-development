@@ -1,5 +1,20 @@
 /* styles.css */
 
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Header Styling */
 header {
     background-color: #FFFFFF;
@@ -36,23 +51,23 @@ nav ul li a:hover {
 }
 
 /* Banner Styling */
-main section:first-child {
+section:first-child {
     background-color: #FF4500;
     color: #FFFFFF;
     padding: 50px;
 }
 
-main section:first-child h1 {
+section:first-child h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-main section:first-child p {
+section:first-child p {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-main section:first-child button {
+section:first-child button {
     background-color: #FFFFFF;
     color: #FF4500;
     border: none;
@@ -62,31 +77,90 @@ main section:first-child button {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-main section:first-child button:hover {
+section:first-child button:hover {
     background-color: #FFA07A; /* Change background color on hover */
     color: #FFFFFF; /* Change text color on hover */
-}/* styles.css */
-
-/* Quote Section Styling */
-.quote-section {
-    text-align: center;
-    padding: 50px;
 }
 
-.quote-image {
-    width: 100px; /* Adjust width as needed */
-    border-radius: 50%; /* Make the image round */
-    margin-bottom: 20px;
+/* Video Block Styling */
+.video-block {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-.quote-text {
+.video-image {
+    width: 100%; /* Ensure images fill the container */
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease; /* Add transition effect on hover */
+}
+
+.video-block:hover .video-image {
+    transform: scale(1.05); /* Enlarge image on hover */
+}
+
+.video-title {
     font-size: 24px;
-    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.quote-author {
-    font-size: 18px;
-    font-style: italic;
+.video-description {
+    font-size: 16px;
     color: #666666;
+    margin-top: 5px;
 }
 
+/* Membership Block Styling */
+.membership-block {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.membership-image {
+    width: 100%; /* Ensure images fill the container */
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease; /* Add transition effect on hover */
+}
+
+.membership-block:hover .membership-image {
+    transform: scale(1.05); /* Enlarge image on hover */
+}
+
+.membership-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.membership-description {
+    font-size: 16px;
+    color: #666666;
+    margin-top: 5px;
+}
+
+/* FAQ Block Styling */
+.faq-block {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.faq-question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 16px
+}
